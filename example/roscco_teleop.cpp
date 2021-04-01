@@ -39,8 +39,8 @@ private:
   const double BRAKE_MIN_ = 0;
   const double THROTTLE_MAX_ = 1;
   const double THROTTLE_MIN_ = 0;
-  const double STEERING_MAX_ = 1;
-  const double STEERING_MIN_ = -1;
+  const double STEERING_MAX_ = 0.5;
+  const double STEERING_MIN_ = -0.5;
 
   // Store last known value for timed callback
   double brake_ = 0.0;
@@ -58,11 +58,11 @@ private:
   // The threshold for considering the controller triggers to be parked in the correct position
   const double PARKED_THRESHOLD_ = 0.99;
 
-  const int BRAKE_AXES_ = 2;
-  const int THROTTLE_AXES_ = 5;
-  const int STEERING_AXES_ = 0;
-  const int START_BUTTON_ = 7;
-  const int BACK_BUTTON_ = 6;
+  const int BRAKE_AXES_ = 4; //ds4, left trigger
+  const int THROTTLE_AXES_ = 5; //ds4, right trigger
+  const int STEERING_AXES_ = 0; //left analog x
+  const int START_BUTTON_ = 8; //share
+  const int BACK_BUTTON_ = 9; //options
 
   const double TRIGGER_MIN_ = 1;
   const double TRIGGER_MAX_ = -1;
