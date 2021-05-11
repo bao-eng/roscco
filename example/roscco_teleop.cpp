@@ -35,12 +35,12 @@ private:
   const float CALLBACK_FREQ_ = 0.05;  // Units in Seconds
 
   // OSCC input range
-  const double BRAKE_MAX_ = 1;
+  const double BRAKE_MAX_ = 0.3;
   const double BRAKE_MIN_ = 0;
-  const double THROTTLE_MAX_ = 1;
+  const double THROTTLE_MAX_ = 0.3;
   const double THROTTLE_MIN_ = 0;
-  const double STEERING_MAX_ = 0.5;
-  const double STEERING_MIN_ = -0.5;
+  const double STEERING_MAX_ = 0.6;
+  const double STEERING_MIN_ = -0.6;
 
   // Store last known value for timed callback
   double brake_ = 0.0;
